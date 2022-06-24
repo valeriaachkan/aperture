@@ -1,0 +1,35 @@
+// Hero
+.h1-section__overlay {
+    padding: 450px 16px 0 16px;
+    
+    background-image: url(/images/hero-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 80%;
+
+    @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+        background-image: url(/images/hero-image@2x.jpg);
+    }
+}
+.h1-section__title {
+    font-size: 11px;
+    line-height: 1.43;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $text-secondary-color;
+
+    margin-bottom: 2px;
+}
+.h1-section__heading {
+    font-size: 30px;
+    line-height: 1.1;
+
+    margin-bottom: 12px;
+}
+.h1-section__text {
+    font-size: 11px;
+    line-height: 1.43;
+    color: $text-secondary-color;
+}

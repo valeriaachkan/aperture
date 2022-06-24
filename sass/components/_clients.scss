@@ -1,0 +1,22 @@
+// Clients
+.client__list {
+    @extend %list;
+    display: flex;
+    flex-wrap: wrap;
+}
+.client__item {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+    // &:not(:last-child) {
+    //     margin-bottom: 30px;
+    // }
+}
+.client__icon {
+    fill: $white;
+
+    // &:hover,
+    // &:focus {
+    //     fill: $white;
+    // }
+}
+

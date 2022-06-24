@@ -3,22 +3,29 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  color: $text-primary-color;
+  font-family: 'Poppins';
+  font-weight: 400;
+  
+  
+}
 *,
 ::before,
 ::after {
   box-sizing: inherit;
 }
 
-body {
-  margin: 0;
-  background-color: $white;
-  position: relative;
-  letter-spacing: 0.03em;
-}
+// body {
+//   margin: 0;
+//   background-color: $white;
+//   position: relative;
+//   letter-spacing: 0.03em;
+// }
 
-.page {
-  position: relative;
-}
+// .page {
+//   position: relative;
+// }
 
 a {
   text-decoration: none;
@@ -41,77 +48,80 @@ a {
 h1,
 h2,
 h3,
+h4,
+h5,
 p {
   margin: 0;
   font-family: inherit;
 }
 
-li {
-  list-style-type: none;
-}
+// li {
+//   list-style-type: none;
+// }
 
-h1 {
+// h1 {
 
-}
+// }
 
 
 img {
+  display: block;
   height: auto;
   max-width: 100%;
 }
 
-hr {
-  border-color: $bg-main-color;
-}
+// hr {
+//   border-color: $bg-main-color;
+// }
 
-//* two space between columns
-//* it`s a column in a mobile, a row in a tablet
+// //* two space between columns
+// //* it`s a column in a mobile, a row in a tablet
 
-.two-columns {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+// .two-columns {
+//   display: flex;
+//   justify-content: space-between;
+//   flex-direction: column;
 
-  @media screen and (min-width: $tablet) {
-    justify-content: space-around;
-    flex-direction: row;
-  }
+//   @media screen and (min-width: $tablet) {
+//     justify-content: space-around;
+//     flex-direction: row;
+//   }
 
-  .first-column {
-    max-width: 780%;
-    display: flex;
-    align-self: start;
-    margin-bottom: 44px;
-    @media screen and (min-width: $tablet) {
-      margin-bottom: 0;
-      flex-basis: 35%;
-    }
-  }
+//   .first-column {
+//     max-width: 780%;
+//     display: flex;
+//     align-self: start;
+//     margin-bottom: 44px;
+//     @media screen and (min-width: $tablet) {
+//       margin-bottom: 0;
+//       flex-basis: 35%;
+//     }
+//   }
 
-  .second-column {
-    max-width: 80%;
-    display: flex;
-    align-self: end;
-    @media screen and (min-width: $tablet) {
-      align-self: center;
-      flex-basis: 35%;
-    }
-  }
-}
+//   .second-column {
+//     max-width: 80%;
+//     display: flex;
+//     align-self: end;
+//     @media screen and (min-width: $tablet) {
+//       align-self: center;
+//       flex-basis: 35%;
+//     }
+//   }
+// }
 
-.mobile-only {
-  display: block;
-  @media screen and (min-width: $tablet) {
-    display: none;
-  }
-}
+// .mobile-only {
+//   display: block;
+//   @media screen and (min-width: $tablet) {
+//     display: none;
+//   }
+// }
 
-.tablet-only {
-  display: none;
-  @media screen and (min-width: $tablet) {
-    display: block;
-  }
-}
+// .tablet-only {
+//   display: none;
+//   @media screen and (min-width: $tablet) {
+//     display: block;
+//   }
+// }
 
 .hided {
   position: absolute;

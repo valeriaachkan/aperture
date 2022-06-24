@@ -1,0 +1,103 @@
+// Featured Images
+.featured-image {
+    // position: relative;
+
+    height: 600px;
+    margin-right: auto;
+    margin-left: auto;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media screen and (min-width: 2000px) {
+        height: 900px;
+    }
+
+    &--1 {
+        background-image: url(/images/mount.jpg);
+        
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: url(/images/mount@2x.jpg);
+        }
+    }
+    &--2 {
+        background-image: url(/images/monstera.jpg);
+        background-position: 15%;
+
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: url(/images/monstera@2x.jpg);
+        }
+    }
+    &--3 {
+        background-image: url(/images/starfall.jpg);
+        
+        @media screen and (min-device-pixel-ratio: 2),
+        screen and (min-resolution: 192dpi),
+        screen and (min-resolution: 2dppx) {
+            background-image: url(/images/starfall@2x.jpg);
+        }
+    }
+}
+.featured-image__container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding-top: 260px;
+    padding-bottom: 200px;
+    padding-right: 10%;
+    padding-left: 45%;
+
+    @media screen and (min-width: $tablet) {
+        padding-left: 60%;
+    }
+    @media screen and (min-width: $desktop) {
+        padding-left: 70%;
+    }
+    @media screen and (min-width: 2000px) {
+        padding-top: 390px;
+    }
+}
+
+.featured-image__thumb {
+    text-align: left;
+
+    // position: absolute;
+    // top: 260px;
+    // left: 50%;
+    // right: 16px;
+}
+.featured-image__heading {
+    margin-bottom: 3px;
+}
+
+// Featured image settings
+.settings__list {
+    @extend %list;
+
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+    width: 250px;
+    justify-content: space-between;
+}
+.settings__item {
+    display: flex;
+    align-items: center;
+}
+.settings__value {
+    font-size: 10px;
+    line-height: 1;
+}
+.settings__icon {
+    fill: $white;
+   
+    &:not(:last-child) {
+        margin-right: 5px;
+    }
+}

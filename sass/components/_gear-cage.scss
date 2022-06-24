@@ -1,0 +1,40 @@
+// The Gear cage
+.tools-section {
+    padding-bottom: 70px;
+}
+.tools-section__container {
+    
+
+    @media screen and (min-width: $tablet) {
+        text-align: left;
+    }
+}
+.tools-section__thumb {
+    padding-top: 20%;
+    padding-bottom: 10%;
+}
+.tools-section__heading {
+    margin-bottom: 6px;
+
+    color: $text-secondary-color;
+}
+.tools-section__title {
+    margin-bottom: 10px;
+
+    font-size: 18px;
+    line-height: 1.14;
+}
+.tools-section__text {
+    margin-bottom: 20px;
+
+    color: $text-primary-color;
+}
+.tools-section__button {
+    @extend %button
+
+}
+.tools-section__image {
+    width: 100%;
+    height: 100%;
+    display: block;
+}

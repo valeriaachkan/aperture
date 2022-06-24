@@ -3,38 +3,332 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Name</title>
+    <title>Aperture</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"
+    />
     <link
       rel="shortcut icon"
       href="./images/icons/favicon.png"
       type="image/png"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./sass/fonts/fonts.css" />
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    /> -->
-    <!-- <link rel="stylesheet" href="./sass/slick.css" />
-    <link rel="stylesheet" href="./sass/slick-theme.css" /> -->
-    <link rel="stylesheet" href="./sass/main.css" />
+    <link rel="stylesheet" href="./css/main.css"/>
   </head>
 
-  <body class="page home-page">
-    <header>
-      
+  <body class="page">
+    <header class="page-header">
+      <div class="container page-header__container">
+        <a href="./index.html" class="logo">
+          <svg width="100px" height="27px">
+            <use href="./images/symbol-defs.svg#icon-logo"></use>
+          </svg>
+        </a>
+        <button 
+          type="button"
+          class="menu-button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
+          <svg class="icon-menu" width="20px" height="20px">
+            <use href="./images/symbol-defs.svg#icon-menu"></use>
+          </svg>
+          <svg class="icon-cross" width="20px" height="20px">
+            <use href="./images/symbol-defs.svg#close-icon"></use>
+          </svg>
+        </button>
+        <div class="menu-container" id="menu-container" data-menu>
+          <nav>
+            <ul>
+              <li>
+                <a href="">Business areas</a>
+              </li>
+              <li>
+                <a href="">Featured images</a>
+              </li>
+              <li>
+                <a href="">Gear cage</a>
+              </li>
+            </ul>
+            <button type="button">Get in touch</button>
+          </nav>
+        </div>
+      </div>
     </header>
-    <footer>
+    <main>
+      <section class="section">
+        <div class="section__overlay h1-section__overlay">
+          <div class="h1-section__thumb">
+            <p class="h1-section__title">Photographer & Filmmaker</p>
+            <h1 class="h1-section__heading">Aperture Studios</h1>
+            <p class="h1-section__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
+          </div>
+        </div>
+      </section>
+      <section class="section section--padding">
+        <div class="container">
+          <h2 class="section__heading">What we do</h2>
+          <p class="section__text">The areas that we're specialized in</p>
+          <ul class="card-set">
+            <li class="card-set__item">
+              <div class="card__overlay">
+                <img 
+                class="card__image"
+                alt="Product Photography"
+                src="./images/card-image1.jpg"
+                srcset="./images/card-image1.jpg 1x,
+                ./images/card-image1@2x.jpg 2x"
+                />
+                <div class="card__thumb">
+                  <h3 class="card__title">Product Photography</h3>
+                  <p class="card__text">Cras commodo consequat orci, in convallis risus egestas non. Nulla efficitur auctor hendrerit. Etiam ut orci varius, faucibus libero ac, cursus quam.</p>
+                  <a class="card__link" href="">Read more</a>
+                </div>
+              </div>
+            </li>
+            <li class="card-set__item">
+              <div class="card__overlay">
+                <img 
+                class="card__image"
+                alt="Architecture Photography"
+                src="./images/card-image2.jpg"
+                srcset="./images/card-image2.jpg 1x,
+                ./images/card-image2@2x.jpg 2x"
+                />
+                <div class="card__thumb">
+                  <h3 class="card__title">Architecture Photography</h3>
+                  <p class="card__text">Aenean porta neque eget consequat fringilla. Vestibulum ultrices, orci nec egestas pharetra, ligula est semper enim, nec auctor sapien leo nec purus. Fusce tincidunt aliquet sapien, sit amet rhoncus leo imperdiet nec.</p>
+                  <a class="card__link" href="">Read more</a>
+                </div>
+              </div>
+            </li>
+            <li class="card-set__item">
+              <div class="card__overlay">
+                <img 
+                class="card__image"
+                alt="Drone Photography"
+                src="./images/card-image3.jpg"
+                srcset="./images/card-image3.jpg 1x,
+                ./images/card-image3@2x.jpg 2x"
+                />
+                <div class="card__thumb">
+                  <h3 class="card__title">Drone Photography</h3>
+                  <p class="card__text">Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt. Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in convallis risus egestas non. Nulla efficitur auctor hendrerit. Etiam ut orci varius, faucibus libero ac, cursus quam.</p>
+                  <a class="card__link" href="">Read more</a>
+                </div>
+              </div>
+            </li>
+            <li class="card-set__item">
+              <div class="card__overlay">
+                <img 
+                class="card__image"
+                alt="Wildlife Photography"
+                src="./images/card-image4.jpg"
+                srcset="./images/card-image4.jpg 1x,
+                ./images/card-image4@2x.jpg 2x"
+                />
+                <div class="card__thumb">
+                  <h3 class="card__title">Wildlife Photography</h3>
+                  <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus. Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula. Vestibulum sit amet urna turpis.</p>
+                  <a class="card__link" href="">Read more</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section featured-image featured-image--1">
+        <div class="featured-image__container">
+          <div class="featured-image__thumb">
+            <h3 class="featured-image__heading secondary-section__heading">Sunset at Mount Fuji</h3>
+            <p class="featured-image__text secondary-section__text">Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in convallis risus egestas non.</p>
+          </div>
+            <ul class="featured-image__settings settings__list">
+              <li class="settings__item">
+                <svg class="settings__icon" width="16px" height="16px">
+                  <use href="./images/symbol-defs.svg#icon-exposure"></use>
+                </svg>
+                <p class="settings__value">1"</p>
+              </li>
+              <li class="settings__item">
+                <svg class="settings__icon" width="16px" height="16px">
+                  <use href="./images/symbol-defs.svg#icon-aperture"></use>
+                </svg>
+                <p class="settings__value">f/16</p>
+              </li>
+              <li class="settings__item">
+                <svg class="settings__icon" width="30px" height="16px">
+                  <use href="./images/symbol-defs.svg#icon-iso"></use>
+                </svg>
+                <p class="settings__value">400</p>
+              </li>
+              <li class="settings__item">
+                <svg class="settings__icon" width="10px" height="16px">
+                  <use href="./images/symbol-defs.svg#icon-location"></use>
+                </svg>
+                <p class="settings__value">Japan</p>
+              </li>
+            </ul>
+        </div>
+      </section>
+      <section class="section tools-section">
+        <div class="container tools-section__container">
+          <div class="tools-section__thumb">
+            <h3 class="tools-section__heading secondary-section__heading">The Gear cage</h3>
+            <h4 class="tools-section__title">The tools that we use</h4>
+            <p class="tools-section__text secondary-section__text">The say that "no place is boring if you've had a good night's sleep and have a pocket full of unexposed film". While we don't shoot (a lot) of film these days — these are the tools that we actually use everyday to capture the amazing things around us.</p>
+            <a href="" class="tools-section__button">Check it out</a>
+          </div>
+          <div>
+            <img 
+                class="tools-section__image"
+                alt="The Gear cage"
+                src="./images/tools.jpg"
+                srcset="./images/tools.jpg 1x,
+                ./images/tools@2x.jpg 2x"
+                />
+          </div>
+        </div>
+      </section>
+      <section class="section featured-image featured-image--2">
+        <div class="featured-image__container">
+          <div class="featured-image__thumb">
+            <h3 class="featured-image__heading secondary-section__heading">Monstera Leafs</h3>
+            <p class="featured-image__text secondary-section__text">Vestibulum sit amet urna turpis. Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt.</p>
+          </div>
+          <ul class="featured-image__settings settings__list">
+            <li class="settings__item">
+              <svg class="settings__icon" width="16px" height="16px">
+                <use href="./images/symbol-defs.svg#icon-exposure"></use>
+              </svg>
+              <p class="settings__value">1/400s</p>
+            </li>
+            <li class="settings__item">
+              <svg class="settings__icon" width="16px" height="16px">
+                <use href="./images/symbol-defs.svg#icon-aperture"></use>
+              </svg>
+              <p class="settings__value">f/3,5</p>
+            </li>
+            <li class="settings__item">
+              <svg class="settings__icon" width="30px" height="16px">
+                <use href="./images/symbol-defs.svg#icon-iso"></use>
+              </svg>
+              <p class="settings__value">100</p>
+            </li>
+            <li class="settings__item">
+              <svg class="settings__icon" width="10px" height="16px">
+                <use href="./images/symbol-defs.svg#icon-location"></use>
+              </svg>
+              <p class="settings__value">Costa Rica</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section section--padding">
+        <div class="client">
+          <h2 class="section__heading">Past clients</h2>
+          <p class="section__text">Trusted by your favourite companies</p>
+          <ul class="client__list">
+            <li class="client__item">
+              <svg class="client__icon" width="128px" height="80px">
+                <use href="./images/symbol-defs.svg#icon-client-1"></use>
+              </svg>
+            </li>
+            <li class="client__item">
+              <svg class="client__icon" width="128px" height="80px">
+                <use href="./images/symbol-defs.svg#icon-client-2"></use>
+              </svg>
+            </li>
+            <li class="client__item">
+              <svg class="client__icon" width="128px" height="80px">
+                <use href="./images/symbol-defs.svg#icon-client-3"></use>
+              </svg>
+            </li>
+            <li class="client__item">
+              <svg class="client__icon" width="128px" height="80px">
+                <use href="./images/symbol-defs.svg#icon-client-4"></use>
+              </svg>
+            </li>
+            <li class="client__item">
+              <svg class="client__icon" width="128px" height="80px">
+                <use href="./images/symbol-defs.svg#icon-client-5"></use>
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section featured-image featured-image--3">
+        <div class="featured-image__container">
+          <div class="featured-image__thumb">
+            <h3 class="featured-image__heading secondary-section__heading">Star fall in the Himalayas</h3>
+            <p class="featured-image__text secondary-section__text">Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula.</p>
+          </div>
+          <ul class="featured-image__settings settings__list">
+            <li class="settings__item">
+              <svg class="settings__icon" width="16px" height="16px">
+                <use href="./images/symbol-defs.svg#icon-exposure"></use>
+              </svg>
+              <p class="settings__value">6"</p>
+            </li>
+            <li class="settings__item">
+              <svg class="settings__icon" width="16px" height="16px">
+                <use href="./images/symbol-defs.svg#icon-aperture"></use>
+              </svg>
+              <p class="settings__value">f/11</p>
+            </li>
+            <li class="settings__item">
+              <svg class="settings__icon" width="30px" height="16px">
+                <use href="./images/symbol-defs.svg#icon-iso"></use>
+              </svg>
+              <p class="settings__value">800</p>
+            </li>
+            <li class="settings__item">
+              <svg class="settings__icon" width="10px" height="16px">
+                <use href="./images/symbol-defs.svg#icon-location"></use>
+              </svg>
+              <p class="settings__value">Nepal</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section section--padding">
+        <div class="container contact__thumb">
+          <h2 class="section__heading">Need help with photography or videography?</h2>
+          <p class="section__text">We're here for you!</p>
+          <button class="contact__button" type="button">Get in touch</button>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="container">
+        <div>
+          <div>
+            <a href="./index.html" class="logo">
+              <svg width="100px" height="27px">
+                <use href="./images/symbol-defs.svg#icon-logo"></use>
+              </svg>
+            </a>
+            <p class="page-footer__text">Photographers & videographers capturing the world around us.</p>
+          </div>
+          <div>
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <h5 class="page-footer__heading">Subscribe to our newsletter</h5>
+          <p class="page-footer__text">Read about all the things we do.</p>
+        </div>
+        <div>
+          <p class="page-footer__text">© Aperture Photography, Inc. All rights reserved.</p>
+        </div>
+      </div>
     </footer>
 
   </head>
-    <script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
-    <!-- <script src="./js/slick.min.js"></script> -->
-    <script src="./js/index.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

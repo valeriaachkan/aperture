@@ -1,0 +1,7 @@
+// Contact section
+.contact__thumb {
+    max-width: 370px;
+}
+.contact__button {
+    @extend %button;
+}
