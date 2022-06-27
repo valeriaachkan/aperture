@@ -1,14 +1,92 @@
 .page-footer {
     background-color: $black;
+
+    &__container {
+        border-bottom: 1px solid $text-secondary-color;
+        padding: 40px 0 30px 0;
+        text-align: center;
+        
+    }
 }
 .page-footer__heading {
+    margin-bottom: 20px;
+
     font-size: 12px;
     line-height: 1.43;
     letter-spacing: 2px;
     text-transform: uppercase;
 }
 .page-footer__text {
+    margin-bottom: 20px;
+
     font-size: 12px;
     line-height: 1.43;
     color: $text-secondary-color;
+
+    &--no-margin {
+        margin: 0;
+    }
+}
+
+// Social nets
+.social-net__list {
+    @extend %list;
+    display: flex;
+    width: 100px;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto;
+    
+
+}
+.social-net__link {
+    fill: $text-secondary-color;
+
+    &:hover, 
+    &:focus {
+        fill: $white;
+    }
+}
+
+// Subscription form
+.subscription-form {
+    padding: 30px 0 30px 0;
+    text-align: center;
+
+    border-bottom: 1px solid $text-secondary-color;
+}
+.subscription-form__thumb {
+    position: relative;
+
+    max-width: 360px;
+    height: 40px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.subscription-form__input {
+    width: 100%;
+    height: 100%;
+    padding: 10px 12px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    background: #F9FAFB;
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+
+    &:focus {
+        outline: 0;
+    }
+}
+.subscription-form__button {
+    @extend %button;
+    background-color: $black;
+    height: 30px;
+    width: 60px;
+
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+.page-footer__rights {
+    padding: 30px 0 50px 0;
 }

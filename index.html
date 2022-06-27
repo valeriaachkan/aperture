@@ -18,7 +18,7 @@
   <body class="page">
     <header class="page-header">
       <div class="container page-header__container">
-        <a href="./index.html" class="logo">
+        <a href="./index.html" class="logo logo--header">
           <svg width="100px" height="27px">
             <use href="./images/symbol-defs.svg#icon-logo"></use>
           </svg>
@@ -38,20 +38,45 @@
           </svg>
         </button>
         <div class="menu-container" id="menu-container" data-menu>
-          <nav>
-            <ul>
-              <li>
-                <a href="">Business areas</a>
+          <nav class="site-nav">
+            <ul class="site-nav__list">
+              <li class="site-nav__item">
+                <a class="site-nav__link" href=".//./index.html#business-areas">Business areas</a>
               </li>
-              <li>
-                <a href="">Featured images</a>
+              <li class="site-nav__item">
+                <a class="site-nav__link" href=".//./index.html#featured-images">Featured images</a>
               </li>
-              <li>
-                <a href="">Gear cage</a>
+              <li class="site-nav__item">
+                <a class="site-nav__link" href=".//./index.html#gear-cage">Gear cage</a>
               </li>
             </ul>
-            <button type="button">Get in touch</button>
           </nav>
+          <div class="container-end">
+            <a class="contact-button" href="#contact">Get in touch</a>
+            <ul class="join-us">
+              <li class="join-us__item">
+                <a href="" class="join-us__link">
+                  <svg width="30px" height="30px">
+                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="join-us__item">
+                <a href="" class="join-us__link">
+                  <svg width="30px" height="30px">
+                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="join-us__item">
+                <a href="" class="join-us__link">
+                  <svg width="30px" height="30px">
+                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -65,7 +90,7 @@
           </div>
         </div>
       </section>
-      <section class="section section--padding">
+      <section class="section section--padding"  id="business-areas">
         <div class="container">
           <h2 class="section__heading">What we do</h2>
           <p class="section__text">The areas that we're specialized in</p>
@@ -137,7 +162,7 @@
           </ul>
         </div>
       </section>
-      <section class="section featured-image featured-image--1">
+      <section class="section featured-image featured-image--1" id="featured-images">
         <div class="featured-image__container">
           <div class="featured-image__thumb">
             <h3 class="featured-image__heading secondary-section__heading">Sunset at Mount Fuji</h3>
@@ -171,15 +196,15 @@
             </ul>
         </div>
       </section>
-      <section class="section tools-section">
-        <div class="container tools-section__container">
-          <div class="tools-section__thumb">
+      <section class="section tools-section" id="gear-cage">
+        <div class="tools-section__container">
+          <div class="tools-section__content">
             <h3 class="tools-section__heading secondary-section__heading">The Gear cage</h3>
             <h4 class="tools-section__title">The tools that we use</h4>
             <p class="tools-section__text secondary-section__text">The say that "no place is boring if you've had a good night's sleep and have a pocket full of unexposed film". While we don't shoot (a lot) of film these days — these are the tools that we actually use everyday to capture the amazing things around us.</p>
             <a href="" class="tools-section__button">Check it out</a>
           </div>
-          <div>
+          <div class="tools-section__overlay">
             <img 
                 class="tools-section__image"
                 alt="The Gear cage"
@@ -291,7 +316,7 @@
           </ul>
         </div>
       </section>
-      <section class="section section--padding">
+      <section class="section section--padding" id="contact">
         <div class="container contact__thumb">
           <h2 class="section__heading">Need help with photography or videography?</h2>
           <p class="section__text">We're here for you!</p>
@@ -301,29 +326,57 @@
     </main>
     <footer class="page-footer">
       <div class="container">
-        <div>
-          <div>
-            <a href="./index.html" class="logo">
+        <div class="page-footer__container">
+          <div class="page-footer__thumb">
+            <a href="./index.html" class="logo logo--footer">
               <svg width="100px" height="27px">
                 <use href="./images/symbol-defs.svg#icon-logo"></use>
               </svg>
             </a>
             <p class="page-footer__text">Photographers & videographers capturing the world around us.</p>
           </div>
-          <div>
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
-          </div>
+          <ul class="social-net__list">
+              <li class="social-net__item">
+                <a class="social-net__link" href="">
+                  <svg width="20px" height="20px">
+                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-net__item">
+                <a class="social-net__link" href="">
+                  <svg width="20px" height="20px">
+                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-net__item">
+                <a class="social-net__link" href="">
+                  <svg width="20px" height="20px">
+                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+          </ul>
         </div>
-        <div>
-          <h5 class="page-footer__heading">Subscribe to our newsletter</h5>
+        <form 
+          class="subscription-form"
+          name="subscription-form"
+          autocomplete="on">
+          <label for="email-subscription"><h5 class="page-footer__heading">Subscribe to our newsletter</h5></label>
           <p class="page-footer__text">Read about all the things we do.</p>
-        </div>
-        <div>
-          <p class="page-footer__text">© Aperture Photography, Inc. All rights reserved.</p>
+          <div class="subscription-form__thumb">
+            <input 
+            type="email"
+            name="email"
+            id="email-subscription"
+            placeholder="E-mail"
+            class="subscription-form__input"/>
+            <button type="submit" class="subscription-form__button"></button>
+          </div>
+        </form>
+        <div class="page-footer__rights">
+          <p class="page-footer__text page-footer__text--no-margin">© Aperture Photography, Inc. All rights reserved.</p>
         </div>
       </div>
     </footer>

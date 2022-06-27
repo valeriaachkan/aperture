@@ -3,6 +3,7 @@
     @extend %list;
     display: flex;
     flex-wrap: wrap;
+    // margin: -15px;
 }
 .client__item {
     width: calc((100% - 4 * 15px) / 2);

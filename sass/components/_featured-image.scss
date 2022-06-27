@@ -15,31 +15,31 @@
     }
 
     &--1 {
-        background-image: url(/images/mount.jpg);
+        background-image: url(../images/mount.jpg);
         
         @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
-            background-image: url(/images/mount@2x.jpg);
+            background-image: url(../images/mount@2x.jpg);
         }
     }
     &--2 {
-        background-image: url(/images/monstera.jpg);
+        background-image: url(../images/monstera.jpg);
         background-position: 15%;
 
         @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
-            background-image: url(/images/monstera@2x.jpg);
+            background-image: url(../images/monstera@2x.jpg);
         }
     }
     &--3 {
-        background-image: url(/images/starfall.jpg);
+        background-image: url(../images/starfall.jpg);
         
         @media screen and (min-device-pixel-ratio: 2),
         screen and (min-resolution: 192dpi),
         screen and (min-resolution: 2dppx) {
-            background-image: url(/images/starfall@2x.jpg);
+            background-image: url(../images/starfall@2x.jpg);
         }
     }
 }
