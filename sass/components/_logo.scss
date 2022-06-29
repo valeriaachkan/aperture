@@ -8,5 +8,8 @@
     
     &--footer {
         margin-bottom: 20px;
+        @media screen and (min-width: $tablet) {
+            justify-content: start;
+        }
     }
 }

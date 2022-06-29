@@ -11,15 +11,15 @@
 %button {
     border: 0;
     border-radius: 12px;
-    background-color: $white;
+    background-color: $button-background-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
-    padding: 8px 13px;
+    padding: 10px 15px;
 
     color: $black;
     font-family: $font-family;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 1.25;
     text-align: center;
     letter-spacing: 0.4px;

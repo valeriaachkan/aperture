@@ -1,9 +1,13 @@
 // Contact section
 .contact__thumb {
     max-width: 370px;
+
+    @media screen and (min-width: $tablet) {
+        max-width: 600px;
+    }
 }
 .contact__button {
     @extend %button;
-    font-size: 20px;
+    font-size: 18px;
     padding: 10px 16px;
 }

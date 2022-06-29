@@ -10,7 +10,7 @@
         padding-bottom: 30px;  
     }
 
-    @media screen and (max-width: 767px) {
+    @media screen and (min-width: 480px) and (max-width: 767px) {
         width: 480px;
     } 
 
@@ -45,11 +45,15 @@
 
     color: $text-secondary-color;
 }
-.tools-section__title {
+.tools-section__subtitle {
     margin-bottom: 10px;
 
     font-size: 18px;
     line-height: 1.14;
+
+    @media screen and (min-width: $desktop) {
+        font-size: 28px;
+    }
 }
 .tools-section__text {
     margin-bottom: 20px;
@@ -61,6 +65,8 @@
 
 }
 .tools-section__overlay {
+    position: relative;
+
     @media screen and (min-width: $tablet) {
         width: calc(100% / 2);
         height: 540px;

@@ -44,10 +44,18 @@
     line-height: 1.43;
     letter-spacing: 2px;
     text-transform: uppercase;
+
+    @media screen and (min-width: $desktop) {
+        font-size: 15px;
+    }
 }
 .secondary-section__text {
     font-size: 12px;
     line-height: 1.43;
     color: $text-secondary-color;
+
+    @media screen and (min-width: $desktop) {
+        font-size: 15px;
+    }
 }
 

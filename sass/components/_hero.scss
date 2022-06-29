@@ -1,6 +1,7 @@
 // Hero
 .h1-section__overlay {
-    padding: 450px 16px 0 16px;
+    position: relative;
+    padding: 450px 18px 30px 18px;
     
     background-image: url(../images/hero-image.jpg);
     background-size: cover;
@@ -20,7 +21,7 @@
         margin-left: auto;
     }
 }
-.h1-section__title {
+.h1-section__subtitle {
     font-size: 11px;
     line-height: 1.43;
     letter-spacing: 2px;
@@ -52,5 +53,20 @@
 
     @media screen and (min-width: $tablet) {
         font-size: 14px;
+    }
+}
+
+.h1-section__settings {
+    display: none;
+
+    @media screen and (min-width: $desktop) {
+        position: absolute;
+        bottom: 0;
+        right: 30px;
+
+        display: flex;
+        flex-direction: row;
+        width: 320px;
+        justify-content: space-between;
     }
 }

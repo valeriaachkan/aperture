@@ -85,6 +85,10 @@
     display: flex;
     width: 250px;
     justify-content: space-between;
+
+    @media screen and (min-width: $desktop) {
+        width: 320px;
+    }
 }
 .settings__item {
     display: flex;
@@ -93,6 +97,10 @@
 .settings__value {
     font-size: 10px;
     line-height: 1;
+
+    @media screen and (min-width: $desktop) {
+        font-size: 15px;
+    }
 }
 .settings__icon {
     fill: $white;

@@ -9,7 +9,7 @@
     />
     <link
       rel="shortcut icon"
-      href="./images/icons/favicon.png"
+      href="./images/favicon1.png"
       type="image/png"
     />
     <link rel="stylesheet" href="./css/main.css"/>
@@ -41,18 +41,18 @@
           <nav class="site-nav">
             <ul class="site-nav__list">
               <li class="site-nav__item">
-                <a class="site-nav__link" href=".//./index.html#business-areas">Business areas</a>
+                <a class="site-nav__link" href="#business-areas">Business areas</a>
               </li>
               <li class="site-nav__item">
-                <a class="site-nav__link" href=".//./index.html#featured-images">Featured images</a>
+                <a class="site-nav__link" href="#featured-images">Featured images</a>
               </li>
               <li class="site-nav__item">
-                <a class="site-nav__link" href=".//./index.html#gear-cage">Gear cage</a>
+                <a class="site-nav__link" href="#gear-cage">Gear cage</a>
               </li>
             </ul>
           </nav>
           <div class="container-end">
-            <a class="contact-button" href="#contact">Get in touch</a>
+            <a class="contact-button" data-modal-open>Get in touch</a>
             <ul class="join-us">
               <li class="join-us__item">
                 <a href="" class="join-us__link">
@@ -84,10 +84,36 @@
       <section class="section">
         <div class="section__overlay h1-section__overlay">
           <div class="h1-section__thumb">
-            <p class="h1-section__title">Photographer & Filmmaker</p>
+            <p class="h1-section__subtitle">Photographer & Filmmaker</p>
             <h1 class="h1-section__heading">Aperture Studios</h1>
             <p class="h1-section__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.</p>
           </div>
+          <ul class="h1-section__settings">
+            <li class="settings__item">
+              <svg class="settings__icon" width="16px" height="16px">
+                <use href="./images/symbol-defs.svg#icon-exposure"></use>
+              </svg>
+              <p class="settings__value">1/2000s</p>
+            </li>
+            <li class="settings__item">
+              <svg class="settings__icon" width="16px" height="16px">
+                <use href="./images/symbol-defs.svg#icon-aperture"></use>
+              </svg>
+              <p class="settings__value">f/11</p>
+            </li>
+            <li class="settings__item">
+              <svg class="settings__icon" width="30px" height="16px">
+                <use href="./images/symbol-defs.svg#icon-iso"></use>
+              </svg>
+              <p class="settings__value">100</p>
+            </li>
+            <li class="settings__item">
+              <svg class="settings__icon" width="10px" height="16px">
+                <use href="./images/symbol-defs.svg#icon-location"></use>
+              </svg>
+              <p class="settings__value">Iceland</p>
+            </li>
+          </ul>
         </div>
       </section>
       <section class="section section--padding"  id="business-areas">
@@ -105,7 +131,7 @@
                 ./images/card-image1@2x.jpg 2x"
                 />
                 <div class="card__thumb">
-                  <h3 class="card__title">Product Photography</h3>
+                  <h3 class="card__heading">Product Photography</h3>
                   <p class="card__text">Cras commodo consequat orci, in convallis risus egestas non. Nulla efficitur auctor hendrerit. Etiam ut orci varius, faucibus libero ac, cursus quam.</p>
                   <a class="card__link" href="">Read more</a>
                 </div>
@@ -121,7 +147,7 @@
                 ./images/card-image2@2x.jpg 2x"
                 />
                 <div class="card__thumb">
-                  <h3 class="card__title">Architecture Photography</h3>
+                  <h3 class="card__heading">Architecture Photography</h3>
                   <p class="card__text">Aenean porta neque eget consequat fringilla. Vestibulum ultrices, orci nec egestas pharetra, ligula est semper enim, nec auctor sapien leo nec purus. Fusce tincidunt aliquet sapien, sit amet rhoncus leo imperdiet nec.</p>
                   <a class="card__link" href="">Read more</a>
                 </div>
@@ -137,7 +163,7 @@
                 ./images/card-image3@2x.jpg 2x"
                 />
                 <div class="card__thumb">
-                  <h3 class="card__title">Drone Photography</h3>
+                  <h3 class="card__heading">Drone Photography</h3>
                   <p class="card__text">Mauris euismod elit et nisi ultrices, ut faucibus orci tincidunt. Duis tristique sed lorem a vestibulum. Cras commodo consequat orci, in convallis risus egestas non. Nulla efficitur auctor hendrerit. Etiam ut orci varius, faucibus libero ac, cursus quam.</p>
                   <a class="card__link" href="">Read more</a>
                 </div>
@@ -153,7 +179,7 @@
                 ./images/card-image4@2x.jpg 2x"
                 />
                 <div class="card__thumb">
-                  <h3 class="card__title">Wildlife Photography</h3>
+                  <h3 class="card__heading">Wildlife Photography</h3>
                   <p class="card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque aliquam odio et faucibus. Nulla rhoncus feugiat eros quis consectetur. Morbi neque ex, condimentum dapibus congue et, vulputate ut ligula. Vestibulum sit amet urna turpis.</p>
                   <a class="card__link" href="">Read more</a>
                 </div>
@@ -200,7 +226,7 @@
         <div class="tools-section__container">
           <div class="tools-section__content">
             <h3 class="tools-section__heading secondary-section__heading">The Gear cage</h3>
-            <h4 class="tools-section__title">The tools that we use</h4>
+            <h4 class="tools-section__subtitle">The tools that we use</h4>
             <p class="tools-section__text secondary-section__text">The say that "no place is boring if you've had a good night's sleep and have a pocket full of unexposed film". While we don't shoot (a lot) of film these days — these are the tools that we actually use everyday to capture the amazing things around us.</p>
             <a href="" class="tools-section__button">Check it out</a>
           </div>
@@ -212,6 +238,32 @@
                 srcset="./images/tools.jpg 1x,
                 ./images/tools@2x.jpg 2x"
                 />
+                <ul class="tools-section__settings settings__list">
+                  <li class="settings__item">
+                    <svg class="settings__icon" width="16px" height="16px">
+                      <use href="./images/symbol-defs.svg#icon-exposure"></use>
+                    </svg>
+                    <p class="settings__value">0,8"</p>
+                  </li>
+                  <li class="settings__item">
+                    <svg class="settings__icon" width="16px" height="16px">
+                      <use href="./images/symbol-defs.svg#icon-aperture"></use>
+                    </svg>
+                    <p class="settings__value">f/5,6</p>
+                  </li>
+                  <li class="settings__item">
+                    <svg class="settings__icon" width="30px" height="16px">
+                      <use href="./images/symbol-defs.svg#icon-iso"></use>
+                    </svg>
+                    <p class="settings__value">100</p>
+                  </li>
+                  <li class="settings__item">
+                    <svg class="settings__icon" width="10px" height="16px">
+                      <use href="./images/symbol-defs.svg#icon-location"></use>
+                    </svg>
+                    <p class="settings__value">Sweden</p>
+                  </li>
+                </ul>
           </div>
         </div>
       </section>
@@ -250,7 +302,7 @@
         </div>
       </section>
       <section class="section section--padding">
-        <div class="client">
+        <div class="client container">
           <h2 class="section__heading">Past clients</h2>
           <p class="section__text">Trusted by your favourite companies</p>
           <ul class="client__list">
@@ -320,7 +372,7 @@
         <div class="container contact__thumb">
           <h2 class="section__heading">Need help with photography or videography?</h2>
           <p class="section__text">We're here for you!</p>
-          <button class="contact__button" type="button">Get in touch</button>
+          <button class="contact__button" type="button" data-modal-open>Get in touch</button>
         </div>
       </section>
     </main>
@@ -363,8 +415,10 @@
           class="subscription-form"
           name="subscription-form"
           autocomplete="on">
-          <label for="email-subscription"><h5 class="page-footer__heading">Subscribe to our newsletter</h5></label>
-          <p class="page-footer__text">Read about all the things we do.</p>
+          <div class="subscription-form__text">
+            <label for="email-subscription"><h5 class="page-footer__heading">Subscribe to our newsletter</h5></label>
+            <p class="page-footer__text">Read about all the things we do.</p>  
+          </div>
           <div class="subscription-form__thumb">
             <input 
             type="email"
@@ -379,9 +433,82 @@
           <p class="page-footer__text page-footer__text--no-margin">© Aperture Photography, Inc. All rights reserved.</p>
         </div>
       </div>
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button type="button" class="button-close" data-modal-close>
+            <svg width="25px" height="25px">
+              <use href="./images/symbol-defs.svg#close-icon"></use>
+            </svg>
+          </button>
+          <address class="contact-info">
+            <ul class="contact-info__list">
+              <li class="contact-info__item">
+                <svg class="contact-info__icon" width="20px" height="20px">
+                  <use href="./images/symbol-defs.svg#icon-location"></use>
+                </svg>
+                <p class="contact-info__text">102 Street 2714 Don</p>
+              </li>
+              <li class="contact-info__item">
+                <svg class="contact-info__icon" width="20px" height="20px">
+                  <use href="./images/symbol-defs2.svg#icon-phone"></use>
+                </svg>
+                <a class="contact-info__text" href="tel:+021234567">+02 1234 567</a>
+              </li>
+              <li class="contact-info__item contact-info__item--inverse">
+                <svg class="contact-info__icon contact-info__icon--inverse" width="20px" height="20px">
+                  <use href="./images/symbol-defs2.svg#icon-email"></use>
+                </svg>
+                <a class="contact-info__text contact-info__text--inverse" href="mailto:aperture@example.com">aperture@example.com</a>
+              </li>
+            </ul>
+          </address>
+          <form 
+          class="contact-form"
+          name="contact-form"
+          autocomplete="on">
+            <div class="form__wrapper">
+              <div class="form__field">
+                <label for="name" class="form__label">Your Name</label>
+                <input type="text" name="name" id="name" class="form__input"/>
+                <svg class="form__icon" width="18px" height="18px">
+                  <use href="./images/symbol-defs2.svg#icon-person"></use>
+                </svg>
+              </div>
+              <div class="form__field">
+                <label for="email" class="form__label">Mail</label>
+                <input type="email" name="email" id="email" class="form__input"/>
+                <svg class="form__icon" width="18px" height="18px">
+                  <use href="./images/symbol-defs2.svg#icon-email"></use>
+                </svg>
+              </div>
+              <div class="form__field">
+                <label for="tel" class="form__label">Phone</label>
+                <input type="tel" name="tel" id="tel" class="form__input"/>
+                <svg class="form__icon" width="18px" height="18px">
+                  <use href="./images/symbol-defs2.svg#icon-phone"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="form__wrapper">
+              <div class="form__field">
+                <label for="comment" class="form__label">Message</label>
+                <textarea
+                  name="comment"
+                  id="comment"
+                  class="form__input form__input--comment"
+                  placeholder="Write here your message"></textarea>
+              </div>
+            </div>
+            <div class="button-wrapper">
+              <button type="submit" class="form__button">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </footer>
 
   </head>
     <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

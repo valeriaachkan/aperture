@@ -12,11 +12,13 @@
     max-width: 576px;
 
     &:not(:last-child) {
-        margin-bottom: 18px;
+        @media screen and (max-width: 767px) {
+            margin-bottom: 18px;
+        }
     }
 
     @media screen and (min-width: $tablet) {
-        width: calc((100% - 4 * 15px) / 2);
+        width: calc((100% - 4 * 10px) / 2);
         margin: 10px;
     }
     
@@ -32,7 +34,7 @@
     left: 20px;
     right: 20px;
 }
-.card__title {
+.card__heading {
     margin-bottom: 15px;
 
     font-size: 13px; 
